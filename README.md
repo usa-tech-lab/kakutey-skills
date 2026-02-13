@@ -9,6 +9,7 @@
 
 | スキル | 説明 |
 |--------|------|
+| **kakutey-installer** | kakutey アプリを GitHub からダウンロード・セットアップする |
 | **kakutey-launcher** | kakutey アプリ（Electron + FastAPI）を起動する |
 | **kakutey-healthcheck** | バックエンド (port 8000) とフロントエンド (port 4200) の稼働確認 |
 | **kakutey-stopper** | kakutey アプリのプロセスを停止する |
