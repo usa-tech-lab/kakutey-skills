@@ -10,7 +10,7 @@ description: Stop the running kakutey application by terminating backend (port 8
 ## 使い方
 
 ```bash
-bash scripts/stop.sh
+python3 scripts/stop.py
 ```
 
 port 8000 (バックエンド) と port 4200 (フロントエンド) をリッスンしているプロセスを検出し、停止する。
