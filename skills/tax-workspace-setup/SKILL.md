@@ -9,7 +9,7 @@ description: Scaffold the annual tax filing workspace folder structure for a giv
 ## 使い方
 
 ```bash
-bash scripts/scaffold.sh <年度> [ベースディレクトリ]
+python3 scripts/scaffold.py <年度> [ベースディレクトリ]
 ```
 
 - `<年度>`: 対象年度（例: `2025`）
@@ -19,10 +19,10 @@ bash scripts/scaffold.sh <年度> [ベースディレクトリ]
 
 ```bash
 # カレントディレクトリに 2025/ を生成
-bash scripts/scaffold.sh 2025
+python3 scripts/scaffold.py 2025
 
 # 指定パスに生成
-bash scripts/scaffold.sh 2025 /path/to/workspace
+python3 scripts/scaffold.py 2025 /path/to/workspace
 ```
 
 ## 生成されるフォルダ構造

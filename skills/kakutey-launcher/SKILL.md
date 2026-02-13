@@ -18,10 +18,10 @@ cd /path/to/kakutey/frontend && npm start
 スクリプトでも起動可能（カレントディレクトリ不問）:
 
 ```bash
-bash scripts/launch.sh
+python3 scripts/launch.py
 ```
 
-`launch.sh` は環境変数 `KAKUTEY_FRONTEND_DIR`、または `scripts/` からの相対パスで `frontend/` を探す。見つからない場合は `KAKUTEY_FRONTEND_DIR` を設定すること。
+`launch.py` は環境変数 `KAKUTEY_FRONTEND_DIR` で `frontend/` ディレクトリを探す。見つからない場合は `KAKUTEY_FRONTEND_DIR` を設定すること。
 
 ## 起動の仕組み
 

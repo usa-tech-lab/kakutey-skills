@@ -10,7 +10,7 @@ kakutey のバックエンド API (port 8000) とフロントエンド (port 420
 ## 使い方
 
 ```bash
-bash scripts/healthcheck.sh
+python3 scripts/healthcheck.py
 ```
 
 ## 出力例
@@ -23,7 +23,7 @@ Frontend (port 4200): OK - listening
 
 バックエンドが未起動（ポートも空き）:
 ```
-Backend  (port 8000): NG - port is open (nothing listening)
+Backend  (port 8000): NG - nothing listening
 Frontend (port 4200): OK - listening
 ```
 
