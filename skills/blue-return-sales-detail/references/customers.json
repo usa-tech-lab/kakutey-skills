@@ -1,0 +1,16 @@
+{
+  "customers": [
+    {
+      "name": "株式会社サンプル商事",
+      "registration_number": "T1234567890123",
+      "address": "〒100-0001 東京都千代田区千代田1-1-1 サンプルビル3階",
+      "journal_pattern": "サンプル商事"
+    },
+    {
+      "name": "合同会社テスト工房",
+      "registration_number": "T9876543210987",
+      "address": "〒530-0001 大阪府大阪市北区梅田2-2-2",
+      "journal_pattern": "テスト工房"
+    }
+  ]
+}

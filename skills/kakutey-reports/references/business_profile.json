@@ -1,0 +1,16 @@
+{
+  "_NOTE": "All values below are fictitious examples. Replace with your actual business information.",
+  "company_name": "サンプル技術研究所（山田太郎）",
+  "registration_number": "T0000000000000",
+  "fiscal_year_start_month": 1,
+  "common_accounts": {
+    "cash": "現金",
+    "main_bank": "事業主借",
+    "main_card": "事業主借",
+    "accounts_receivable": "売掛金",
+    "depreciation_expense": "減価償却費",
+    "accumulated_depreciation": "減価償却累計額"
+  },
+  "preferred_depreciation_method": "straight_line",
+  "tax_return_type": "blue"
+}
