@@ -7,10 +7,18 @@ description: Check if the kakutey backend API (localhost:8000) and frontend (loc
 
 kakutey のバックエンド API (port 8000) とフロントエンド (port 4200) の状態を確認する。
 
+## 前提条件
+
+kakutey CLI がインストールされている必要があります。
+
+```bash
+npm install -g kakutey-cli
+```
+
 ## 使い方
 
 ```bash
-python3 scripts/healthcheck.py
+kakutey health
 ```
 
 ## 出力例

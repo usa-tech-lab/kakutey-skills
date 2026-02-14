@@ -54,6 +54,6 @@ python scripts/md_to_json.py <処理/07_仕訳一覧.md のパス>
 
 ## 次のステップ
 
-1. `kakutey-bookkeeping` の `bulk_add_journals.py` で `07_仕訳データ.json` を kakutey に一括登録
-2. `kakutey-evidence` の `upload_evidence.py` で証憑ファイルを kakutey にアップロード
-3. `kakutey-corrections` で仕訳と証憑の紐付けを実施
+1. `kakutey journals bulk-add 07_仕訳データ.json` で仕訳を kakutey に一括登録
+2. `kakutey evidence upload <ファイルパス>` で証憑ファイルを kakutey にアップロード
+3. `kakutey journals attach` で仕訳と証憑の紐付けを実施
