@@ -12,7 +12,7 @@ kakutey のバックエンド API (port 8000) とフロントエンド (port 420
 kakutey CLI がインストールされている必要があります。
 
 ```bash
-npm install -g kakutey
+npm install -g kakutey-cli
 ```
 
 ## 使い方

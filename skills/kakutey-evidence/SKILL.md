@@ -13,7 +13,7 @@ kakutey CLI がインストールされ、アプリが起動している必要�
 
 ```bash
 # インストール
-npm install -g kakutey
+npm install -g kakutey-cli
 
 # 状態確認
 kakutey health

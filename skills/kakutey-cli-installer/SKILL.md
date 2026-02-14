@@ -22,7 +22,7 @@ python3 scripts/install.py
 ## 処理の流れ
 
 1. 前提条件（node, npm）のバージョンチェック
-2. `npm install -g kakutey` でグローバルインストール
+2. `npm install -g kakutey-cli` でグローバルインストール
 3. `kakutey --version` でインストール確認
 
 ## インストール後

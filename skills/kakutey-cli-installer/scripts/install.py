@@ -63,13 +63,13 @@ def install_kakutey_cli():
     """kakutey CLI をグローバルインストールする。"""
     print("kakutey CLI をインストール中...")
     result = subprocess.run(
-        ["npm", "install", "-g", "kakutey"],
+        ["npm", "install", "-g", "kakutey-cli"],
         capture_output=True, text=True
     )
     if result.returncode != 0:
         print(f"インストールに失敗しました:\n{result.stderr}")
         print("\n権限エラーの場合は sudo を使用してください:")
-        print("  sudo npm install -g kakutey")
+        print("  sudo npm install -g kakutey-cli")
         sys.exit(1)
     print("インストール完了")
 
