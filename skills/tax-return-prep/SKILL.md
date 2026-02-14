@@ -16,14 +16,14 @@ kakutey の決算データから、e-Tax 確定申告作成コーナーの各画
 
 ### Step 0: kakutey からデータ取得
 
-`kakutey-reports` スキルのスクリプトで決算データを取得する:
+`kakutey` CLI で決算データを取得する:
 
 ```bash
 # 損益計算書 + 貸借対照表
-python kakutey-reports/scripts/get_summary.py --type both
+kakutey reports summary <年度>
 
 # 固定資産 + 減価償却
-python kakutey-reports/scripts/get_fixed_assets.py --depreciation <年度>
+kakutey reports assets --depreciation <年度>
 ```
 
 ### Step 1-6: blue-return-* スキルで入力値を算出
