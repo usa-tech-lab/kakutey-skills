@@ -21,9 +21,12 @@ kakutey アプリを GitHub からダウンロードし、依存関係をセッ�
 # カレントディレクトリに kakutey/ を作成
 python3 scripts/install.py
 
-# インストール先を指定
-python3 scripts/install.py /path/to/install/dir
+# 親ディレクトリを指定（kakutey/ は自動付加される）
+python3 scripts/install.py /path/to/parent
+# → /path/to/parent/kakutey/ にインストールされる
 ```
+
+**重要**: インストール先は必ず `kakutey/` フォルダにまとめられる。引数に指定したパスの末尾が `kakutey` でない場合、自動的に `kakutey/` が付加される。ユーザーの作業ディレクトリ直下にアプリファイルを展開してはならない。
 
 ## 処理の流れ
 
@@ -40,4 +43,5 @@ python3 scripts/install.py /path/to/install/dir
 
 - インターネット接続が必要
 - すでにインストール先が存在する場合はソースコードを上書き更新する（`node_modules/` や `.venv/` は保持）
+- インストール先に kakutey 以外のファイルが存在する場合はエラーで中止する
 - macOS / Linux / Windows 対応

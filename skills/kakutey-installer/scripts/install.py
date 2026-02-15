@@ -12,6 +12,7 @@ from urllib.request import urlretrieve
 
 REPO_ZIP_URL = "https://github.com/usa-tech-lab/kakutey/archive/refs/heads/main.zip"
 ARCHIVE_PREFIX = "kakutey-main"
+KAKUTEY_MARKERS = {"backend", "frontend", "package.json"}
 
 
 def check_command(name):
@@ -88,9 +89,24 @@ def check_prerequisites():
     print("前提条件チェック OK")
 
 
+def validate_existing_dir(dest):
+    """既存ディレクトリが kakutey のインストール先として安全か確認する。"""
+    if not dest.exists():
+        return
+    contents = {item.name for item in dest.iterdir()}
+    if not contents:
+        return  # 空ディレクトリは OK
+    if not contents & KAKUTEY_MARKERS:
+        print(f"エラー: {dest} に kakutey 以外のファイルが存在します。")
+        print(f"既存ファイル: {', '.join(sorted(contents))}")
+        print("別のインストール先を指定するか、ディレクトリを整理してください。")
+        sys.exit(1)
+
+
 def download_and_extract(dest):
     """GitHub から zip をダウンロードし展開する。"""
     dest = Path(dest)
+    validate_existing_dir(dest)
     print(f"ダウンロード中: {REPO_ZIP_URL}")
 
     with tempfile.TemporaryDirectory() as tmp:
@@ -144,6 +160,10 @@ def main():
         dest = Path(sys.argv[1]).resolve()
     else:
         dest = Path.cwd() / "kakutey"
+
+    # インストール先は必ず kakutey/ フォルダにまとめる
+    if dest.name != "kakutey":
+        dest = dest / "kakutey"
 
     print(f"=== kakutey installer ===\n")
 
