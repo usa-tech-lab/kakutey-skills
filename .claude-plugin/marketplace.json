@@ -1,0 +1,23 @@
+{
+  "name": "kakutey-marketplace",
+  "owner": {
+    "name": "usa-tech-lab"
+  },
+  "metadata": {
+    "description": "個人事業主向け確定申告ワークフローの Claude Code プラグイン集"
+  },
+  "plugins": [
+    {
+      "name": "kakutey-skills",
+      "source": "./",
+      "description": "kakutey 記帳アプリと連携した確定申告ワークフロー支援プラグイン（19スキル）",
+      "version": "1.0.0",
+      "author": {
+        "name": "usa-tech-lab"
+      },
+      "license": "MIT",
+      "keywords": ["kakutey", "確定申告", "青色申告", "bookkeeping", "tax-return"],
+      "category": "productivity"
+    }
+  ]
+}

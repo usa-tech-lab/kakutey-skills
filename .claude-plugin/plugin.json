@@ -1,0 +1,12 @@
+{
+  "name": "kakutey-skills",
+  "description": "kakutey 記帳アプリと連携した確定申告ワークフロー支援プラグイン",
+  "version": "1.0.0",
+  "author": {
+    "name": "usa-tech-lab"
+  },
+  "homepage": "https://github.com/usa-tech-lab/kakutey-skills",
+  "repository": "https://github.com/usa-tech-lab/kakutey-skills",
+  "license": "MIT",
+  "keywords": ["kakutey", "確定申告", "青色申告", "bookkeeping", "tax-return"]
+}

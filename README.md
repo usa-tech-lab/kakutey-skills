@@ -45,6 +45,19 @@
 
 ## インストール
 
+### プラグインとしてインストール（推奨）
+
+Claude Code 内で以下を実行：
+
+```
+/plugin marketplace add usa-tech-lab/kakutey-skills
+/plugin install kakutey-skills@kakutey-marketplace
+```
+
+インストール後、スキルは `/kakutey-skills:スキル名` で呼び出せます（例: `/kakutey-skills:kakutey-bookkeeping`）。
+
+### 手動インストール
+
 ```bash
 # リポジトリをクローン
 git clone https://github.com/usa-tech-lab/kakutey-skills.git
