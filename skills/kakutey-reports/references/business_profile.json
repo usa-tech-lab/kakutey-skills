@@ -1,5 +1,5 @@
 {
-  "_NOTE": "All values below are fictitious examples. Replace with your actual business information.",
+  "_NOTE": "Fallback file. If accounting-policy.md exists in the workspace, it takes precedence. All values below are fictitious examples.",
   "company_name": "サンプル技術研究所（山田太郎）",
   "registration_number": "T0000000000000",
   "fiscal_year_start_month": 1,
