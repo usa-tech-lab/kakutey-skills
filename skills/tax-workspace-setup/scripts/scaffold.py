@@ -2,6 +2,7 @@
 """年度別の確定申告作業用フォルダ構造を生成する。"""
 
 import re
+import shutil
 import sys
 from pathlib import Path
 
@@ -14,6 +15,13 @@ SUBDIRS = [
     "処理",
     "確定申告",
 ]
+
+TEMPLATE_REL_PATH = (
+    Path(__file__).resolve().parent.parent.parent
+    / "accounting-policy-setup"
+    / "references"
+    / "template.md"
+)
 
 
 def main():
@@ -34,6 +42,14 @@ def main():
             d.mkdir(parents=True, exist_ok=True)
             created += 1
 
+    # accounting-policy.md テンプレートを配置
+    policy_dest = root / "accounting-policy.md"
+    if not policy_dest.exists() and TEMPLATE_REL_PATH.exists():
+        content = TEMPLATE_REL_PATH.read_text(encoding="utf-8")
+        content = content.replace("{year}", year)
+        policy_dest.write_text(content, encoding="utf-8")
+        print(f"Placed accounting-policy.md template at: {policy_dest.resolve()}")
+
     if created > 0:
         print(f"Created {year} workspace at: {root.resolve()}")
     else:
@@ -42,6 +58,7 @@ def main():
     print(f"""
 Structure:
   {year}/
+  ├── accounting-policy.md
   ├── 証憑/
   │   ├── 01_弊社から顧客への請求書/
   │   ├── 02_業者から弊社への請求書・領収書/
@@ -52,7 +69,7 @@ Structure:
   ├── 処理/
   └── 確定申告/
 
-Next: place evidence files in 証憑/ subdirectories.""")
+Next: edit accounting-policy.md, then place evidence files in 証憑/ subdirectories.""")
 
 
 if __name__ == "__main__":

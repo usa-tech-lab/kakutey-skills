@@ -22,7 +22,7 @@ kakutey health
 ## リソース
 
 - **API 仕様**: [api_reports.md](references/api_reports.md)
-- **事業主情報**: [business_profile.json](references/business_profile.json)（常用する勘定科目等を記載）
+- **事業者情報・勘定科目**: まずワークスペースの `accounting-policy.md` の「事業者情報」「常用勘定科目」セクションを参照。存在しない場合は [business_profile.json](references/business_profile.json) を参照
 - **CLI ヘルプ**: `kakutey reports --help`
 
 ## ワークフロー

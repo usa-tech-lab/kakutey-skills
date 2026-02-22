@@ -8,6 +8,7 @@ description: Process evidence files (receipts, invoices, statements) into struct
 
 ## 前提
 
+- ワークスペースに `accounting-policy.md` が配置されていること（未配置の場合は `accounting-policy-setup` スキルで作成するようユーザーに案内）
 - `tax-workspace-setup` スキルでフォルダ構造を生成済みであること
 - `証憑/` の各サブフォルダに証憑ファイルが配置済みであること
 - 画像・PDF の読み取りには `image-describer` スキルを使用できること

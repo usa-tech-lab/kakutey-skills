@@ -42,11 +42,11 @@ python3 scripts/scaffold.py 2025 /path/to/workspace
 
 ## 次のステップ
 
-1. `証憑/` の各サブフォルダに証憑ファイルを配置する
-2. `evidence-processing` スキルに従って `処理/` に書き起こし・仕訳データを生成する
-3. `kakutey-bookkeeping` で仕訳を kakutey に登録する
-4. `kakutey-evidence` で証憑を kakutey にアップロードする
-5. `tax-return-prep` スキルに従って `確定申告/` に入力値マークダウンを生成する
+1. `accounting-policy.md` を事業の実情に合わせて編集する（`accounting-policy-setup` スキルで対話的に作成も可能）
+2. `証憑/` の各サブフォルダに証憑ファイルを配置する
+3. `evidence-processing` スキルに従って `処理/` に書き起こし・仕訳データを生成する
+4. `kakutey-bookkeeping` で仕訳を kakutey に登録する
+5. `kakutey-evidence` で証憑を kakutey にアップロードする
 
 ## 冪等性
 
